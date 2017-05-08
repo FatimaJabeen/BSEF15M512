@@ -13,7 +13,7 @@ for i in range (n):
         b_time=int(input("Burst Time:"))
 	burst_time.append(b_time)
 	processes[priority[i]] = [i+1 , arrival_time[i] , burst_time[i]]
-	print "Priorityno. "\t" Arrival Time "\t" Burst Time"
+	print "Priorityno\tArrival Time\t Burst Time"
 for i in range (n):
 	print priority[i] , "\t\t" , arrival_time[i], "\t\t" , burst_time[i] 
 	priority.sort()
