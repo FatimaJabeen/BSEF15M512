@@ -1,0 +1,26 @@
+total = 0
+process={}
+brust_time=[]
+arrival_time=[]
+#functions/methods
+def input():
+  n = int(raw_input("Enter the number of processes:"))
+	for i in range (n):
+		process.append([])
+		process[i].append(int(input('enter process_name: ')))
+		process[i].append(int(input('enter arrival_time: ')))
+		process[i].append(int(input('enter brust_time: ')))	
+print ("Arrival Time \t Burst Time")
+	return;
+  
+def print():
+	for i in range ():
+		print( processes[i][0], "\t" ,processes[i][1],"\t" ,processes[i][2])	
+		total = total + processes.get[i][1]
+	print  ('waiting time',total)
+	print ('average waiting',total/n)
+	return;
+  
+#calling methods in main
+input()
+print()
