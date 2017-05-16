@@ -1,0 +1,33 @@
+total = 0
+process={}
+burst_time=[]
+arrival_time=[]
+
+#functions/methods
+def input():
+	n = int(raw_input("Enter the number of processes:"))
+	for i in range (n):
+		process.append([])
+		process[i].append(int(input('enter process_name: ')))
+		process[i].append(int(input('enter arrival_time: ')))
+		process[i].append(int(input('enter brust_time: ')))
+	return;
+
+def print():
+	for i in range (n):	
+		processes[burst_time[i]] = [i+1 , arrival_time[i]]
+print ("Arrival Time\tBurst Time")
+
+def print_result():
+	for i in range (n):
+		print (arrival_time[0], "\t\t" , burst_time[i] )
+    burst_time.sort()
+		total = processes.get(burst_time[0])[1]
+		total = total + burst_time[i]
+	print ( total)
+	return;
+
+#calling functions/methods
+input()
+print()
+print_result()
